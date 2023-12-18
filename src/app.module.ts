@@ -2,14 +2,15 @@ import { Module } from '@nestjs/common';
 import { CatsModule } from './cats/cats.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BreedsModule } from './breeds/breeds.module';
+
 @Module({
   imports: [
       TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 3307,
-      username: 'user_crud',
-      password: 'root',
+      port: 3306,
+      username: 'user_eduardo',
+      password: 'User_Eduardo',
       database: 'db_crud',
       autoLoadEntities: true,
       synchronize: true
